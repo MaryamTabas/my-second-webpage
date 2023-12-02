@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        My First WebPage
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <img id="logo" alt="jovian logo"
+            src="data:image/png;base64,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">
+    </div>
+    <img id="banner" src="banner.jpg" alt="Banner" height="290px">
+
+    <h1>About Jovian</h1>
+    <div id="about">
+        <div id="description">
+            <p style="margin: 0;">
+                As Jovian,we're on a mission to build the world most highly
+                reputed university,and we're building it completely online.
+                We offer several beginner friendly courses that are taken by
+                300,000+ registered users.
+            </p>
+            <p> We also offer 2 industry-focused bootcamps:</p>
+            <ol>
+                <li>
+                    <a href="https://www.jovian.com/full-stack-developer-bootcamp">
+                        Jovian Full Stack Developer Bootcamp</a>
+                </li>
+                <li>
+                    <a href="https://www.jovian.com/data-science-bootcamp">
+                        Jovian Data Science Bootcamp</a>
+                </li>
+            </ol>
+        </div>
+        <div id="team">
+            <img id="team-image" src="team.jpg" alt="Team">
+        </div>
+    </div>
+
+
+
+
+
+    <h2>Job Opportunities</h2>
+    <div id="jobs">
+        <table id="jobs-table">
+            <tr class="jobs-header-row">
+                <th>Job Title </th>
+                <th>Location</th>
+                <th>Salary</th>
+                <th>Posted On</th>
+            </tr>
+
+
+            <tr class="jobs-data-row">
+                <td> Frontend Developer</td>
+                <td>Bengluru, India </td>
+
+                <td>₹12,00,000</td>
+                <td>Mar,3 2023</td>
+            </tr>
+
+            <tr class="jobs-data-row">
+                <td> Full Stack Developer</td>
+                <td>New Dehli, India </td>
+
+                <td>₹15,00,000</td>
+                <td>Aug,6 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Data Scientist</td>
+                <td>San Francisco, USA </td>
+
+                <td>$13,00,000</td>
+                <td>Jul,15 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>ML Engineer</td>
+                <td>Remote </td>
+                <td>$80,00,000</td>
+                <td>May,20 2023</td>
+            </tr>
+
+        </table>
+
+    </div>
+    <div id="application">
+        <h2>Submit Your Application</h2>
+    <form id="application-form" 
+    action="https://formbold.com/s/6r0e2" method="POST">
+        <div class="form-group">
+            <label for="name">Full Name</label><br>
+            <input type="text" id="name" name="Full Name" required placeholder="John Bee">
+        </div>
+        <div class="form-group">
+            <label for="email">Email </label><br>
+            <input type="email" id="email" name="Email Address" required placeholder="jbee@example.com">
+        </div>
+<div class="form-group">
+    <label for="phone">Phone</label><br>
+    <input type="phone" id="phone" name="Phone" required placeholder="+919898898988">
+</div>
+<div class="form-group">
+    <label for="dob">Date of Birth</label><br>
+    <input type="date" id="dob" name="dob" required >
+</div>
+<div class="form-group">
+    <label for="position">Position Applied for</label><br>
+    <select id="position" name="Position Applied" required>
+        <option value="">Select position</option>
+        <option value="frontend developer">Frontend Developer</option>
+        <option value="fullstack developer">Full Stack Developer</option>
+        <option value="data scientist">Data Scientist</option>
+        <option value="ml engineer">ML Engineer</option>
+
+    </select>
+
+</div>
+
+<div class="form-group">
+    <label for="resume">Upload Resume</label><br>
+    <input type="file" id="resume" name="Resume" accept=".pdf.doc.docx" required>
+</div>
+        <div class="form-group">
+            <label for="coverletter">Cover Letter</label><br>
+            <textarea  id="coverletter" name="coverletter" rows="5" placeholder="Explain what makes you suitable for the job..."></textarea>
+        </div>
+<div class="form-group">
+    <label for="terms">
+        <input type="checkbox" id="terms" name="Terms" required>
+        I agree to the terms and conditions
+    </label>
+</div>
+
+
+        <div class="form-group">
+            <input type="submit" value="Submit Application" >
+            
+        </div>
+    </form>
+    </div>
+
+
+<div id="footer" >
+    <ul id="footer-links">
+        <li>
+            <a href="https://www.jovian.com/learn" target="_blank">
+                Courses</a>
+        </li>
+        <li><a href="https://www.jovian.com/learn" target="_blank">
+                Programs</a></li>
+        <li>
+            <a href="https://youtube.com/@jovianhq" target="_blank">YouTube</a>
+        </li>
+    </ul>
+    <span class="copyright">©2023,Jovian</span>
+</div>
+</body>
+</html>
